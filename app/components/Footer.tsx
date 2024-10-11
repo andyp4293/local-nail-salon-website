@@ -1,4 +1,5 @@
-
+import { PhoneIcon } from "@heroicons/react/24/solid";
+import PlaceIcon from "@mui/icons-material/Place";
 
 import MapLocation from "./MapLocation";
 
@@ -6,19 +7,19 @@ export default function Footer() {
     
     return (
         <div>
-            <div className="w-full bg-black p-14 text-white flex flex-col md:flex-row md:justify-between align-between" >
+            <div className="w-full bg-black p-14 text-white flex flex-col md:flex-row md:justify-between align-between md:gap-10" >
                 <div className =''>
-                    <h1 className="text-[35px] font-bold">Contact Us</h1>
+                    <h1 className="text-[35px] font-bold gap-1 mb-5">Contact Us</h1>
                     <div className = 'text-[20px]'>
-                        <p>{process.env.NEXT_PUBLIC_ADDRESS}</p>
-                        <p>{process.env.NEXT_PUBLIC_NUMBER}</p>
+                        <p className = 'flex items-center gap-1'><PlaceIcon className = 'h-5 w-5'/>{process.env.NEXT_PUBLIC_ADDRESS}</p>
+                        <p className = 'flex items-center gap-1'><PhoneIcon className = 'h-5 w-5'/>{process.env.NEXT_PUBLIC_NUMBER}</p>
                     </div>
 
-                    <h1 className="text-[35px] mt-4 font-bold">Business Hours</h1>
+                    <h1 className="text-[35px] mt-4 font-bold mb-5">Business Hours</h1>
                     <div className = 'text-[20px]'>
-                        <p>Monday - Fri: 9:30 AM-6PM</p>
-                        <p>Saturdy: 9 AM -4 PM </p>
-                        <p>Sunday: Closed</p>
+                        <p><strong>Monday - Fri: </strong>9:30 AM-6PM</p>
+                        <p><strong>Saturday: </strong>9 AM -4 PM </p>
+                        <p><strong>Sunday: </strong> Closed</p>
                     </div>
 
                 </div>

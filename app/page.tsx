@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className="container mx-auto px-6 py-12">
         {/* About Us Section */}
-        <section className="flex flex-col md:flex-row items-center">
+        <section className="flex flex-col md:flex-row items-center mt-10">
           {/* Text Block */}
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -39,15 +39,6 @@ export default function Home() {
               alt="Spa nails"
               className="rounded-lg shadow-lg"
             />
-            {/* Floating Contact Icons */}
-            <div className="absolute right-6 bottom-6 flex flex-col space-y-4">
-              <button className="bg-pink-500 text-white p-3 rounded-full shadow-lg">
-                📞
-              </button>
-              <button className="bg-pink-500 text-white p-3 rounded-full shadow-lg">
-                📅
-              </button>
-            </div>
           </div>
         </section>
       </main>
