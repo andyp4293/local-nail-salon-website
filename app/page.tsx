@@ -1,15 +1,41 @@
+"use client";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import homeImage from "./images/homepage_image.png";
+import { Carousel } from "flowbite-react";
+import "flowbite/dist/flowbite.css";
+import carousel1 from "./images/carousel1.jpg";
+import carousel2 from "./images/carousel2.jpg";
+import carousel3 from "./images/carousel3.jpg";
 
 export default function Home() {
   return (
     <div className="font-sans antialiased">
       {/* Header */}
       <Header />
+      <div className="w-full py-1">
+        <Carousel style={{ height: "400px" }} className="mt-10">
+          <Image
+            src={carousel1}
+            alt="Carousel Image 1"
+            className="object-cover w-full h-full"
+          />
+          <Image
+            src={carousel2}
+            alt="Carousel Image 2"
+            className="object-cover w-full h-full"
+          />
+          <Image
+            src={carousel3}
+            alt="Carousel Image 3"
+            className="object-cover w-full h-full"
+          />
+        </Carousel>
+      </div>
 
-      <main className="container mx-auto px-6 py-12">
+      <main className="container mx-auto px-6 ">
         {/* About Us Section */}
         <section className="flex flex-col md:flex-row items-center mt-10">
           {/* Text Block */}
@@ -39,6 +65,15 @@ export default function Home() {
               alt="Spa nails"
               className="rounded-lg shadow-lg"
             />
+          </div>
+        </section>
+        <section>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 mt-10">
+            {`Book an Appointment`}
+          </h2>
+
+          <div className="flex space-x-4">
+            <p>{`Call us at ${process.env.NEXT_PUBLIC_NUMBER}`}</p>
           </div>
         </section>
       </main>
