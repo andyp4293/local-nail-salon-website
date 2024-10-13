@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from  '../components/Footer';
 import Image from "next/image";
-import aboutImage from "../images/aboutpage_image.png";
+import aboutImage from "../images/aboutpage_image2.jpg";
 
 
 export default function About() {

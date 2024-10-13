@@ -22,11 +22,8 @@ const Header: React.FC = () => {
                     <a href="/about" className="text-gray-800 hover:text-green-600">
                         About Us
                     </a>
-                    <a href="#" className="text-gray-800 hover:text-green-600">
+                    <a href="/booking" className="block text-green-600 font-semibold">
                         Booking
-                    </a>
-                    <a href="#" className="text-green-600 font-semibold">
-                        Contact Us
                     </a>
                 </nav>
 
@@ -71,11 +68,8 @@ const Header: React.FC = () => {
                     <a href="/about" className="block text-gray-800 hover:text-green-600">
                         About Us
                     </a>
-                    <a href="#" className="block text-gray-800 hover:text-green-600">
+                    <a href="/booking" className="block text-green-600 font-semibold">
                         Booking
-                    </a>
-                    <a href="#" className="block text-green-600 font-semibold">
-                        Contact Us
                     </a>
                 </nav>
             </div>
