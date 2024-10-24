@@ -22,11 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <title>ABC Nails</title>
+      </head>
+      <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>
   );
 }

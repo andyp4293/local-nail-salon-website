@@ -16,7 +16,7 @@ import { Clock, Calendar, ArrowRight } from "lucide-react";
 export default function Home() {
   return (
     <div className="font-sans antialiased">
-      {/* Header */}
+      
       <Header />
       <div className="w-full py-1">
         <Carousel style={{ height: "400px" }} className="mt-10 rounded-none">
